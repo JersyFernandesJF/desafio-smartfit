@@ -32,4 +32,5 @@ export class GetUnitsService {
   setFilteredUnits(value: Location[]) {
     this.filteredUnits = value;
   }
+  
 }

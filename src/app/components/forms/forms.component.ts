@@ -1,13 +1,14 @@
 import { CommonModule } from "@angular/common";
 import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 import { FormBuilder, FormGroup, ReactiveFormsModule } from "@angular/forms";
+import { BrowserModule } from "@angular/platform-browser";
 
 @Component({
   selector: "app-forms",
   standalone: true,
   templateUrl: "./forms.component.html",
   styleUrl: "./forms.component.css",
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, BrowserModule],
 })
 export class FormsComponent implements OnInit {
   @Output() submitEvent = new EventEmitter();

@@ -1,8 +1,8 @@
 <div class="card">
-  <span>
-   Aberto
+  <span [ngClass]="{opened: card.opened}">
+   {{ card.opened? 'Aberto' : 'Fechado'}}
   </span>
-  <h3>Test</h3>
+  <h3>{{ card.title }}</h3>
   <p></p>
   <div class="divider"></div>
   <ul>
